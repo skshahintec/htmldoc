@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    background-image: linear-gradient(blueviolet, #4d098d) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar > ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+#navbar > ul > li{   
+    list-style: none;
+    margin: 0px 5px;
+    margin-left: -5px;
+    padding: 15px 0px;
+    
+    
+}
+
+#navbar > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-right: 1px solid white;
+    padding: 16px 20px;
+    transition: 1s;
+}
+
+#navbar > ul > li:first-child > a{
+    border-left: 1px solid white;
+}
+
+#navbar > ul > li:hover > a{
+    background-color: rgb(4, 82, 160);
+    color: orange;
+}
+
+
+.logo > h1{
+    color: white;
+    margin-left: 50px;
+}
+
+.Fistlatter span{
+    color: chartreuse;
+    font-size: 35px;
+
+}
+
+/* Dropdown Menu code start */
+
+.dropdown{
+    opacity: 0;
+    visibility: hidden;
+    background-color: blueviolet;
+    text-align: center;
+    margin-top: 15px;
+    width: 150px;
+    position: absolute;
+    transition: 0.5s;
+    box-shadow: 7px 7px 8px gray;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.dropdown > li{
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid white;
+}
+
+.dropdown > li:hover{
+    background-color: #0452a0;
+}
+
+.dropdown > li:first-child{
+    border-top: 1px solid white;
+}
+
+.dropdown > li > a{
+    text-decoration: none;
+    color: white;
+    transition: 0.7s;
+}
+
+.dropdown > li > a:hover{
+    color: orange;
+}
+
+#navbar > ul > li:hover > .dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* Hero area Code start Here */
+
+#main-header{
+    background-image: linear-gradient(#00000036, #134c4e7e), url('Img/main\ header\ pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 92vh;
+}
+
+.header-container{
+    padding-top: 100px;
+}
+
+.header-container > h1{
+    width: 500px;
+    margin: 20px auto;
+    background-color: #06439e54;
+    font-size: 60px;
+    color: white;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+.header-container > button{
+    background-color: #060679b9;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border-color: #060679b9;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header-container > button:hover{
+    background-color: #0653aa3a;
+    color: orange;
+    font-weight: bolder;
+}
+
+.header-container h5{
+    font-size: 25px;
+    font-style: italic;
+    color: #0aec15;
+    margin-bottom: 40px;
+}
+
+.header-container h4{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #fccf08;
+}
+
+.socialIcon > a{
+    color: white;
+}
+
+.socialIcon > a > i{
+    font-size: 30px;
+    background-color: #06067994;
+    margin: 20px 5px;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+.socialIcon > a > i:hover{
+    background-color: #0000000a;
+    border-color: #060679b9;
+    transform: rotate(360deg);
+}
+
+/* first section code start here */
+
+#first-section{
+    background-color: #f1f1f1;
+}
+
+#first-container{
+    width: 1050px;
+    margin: auto;
+    display: flex;
+    padding: 120px 0px;
+    justify-content: space-between;
+    
+}
+
+.laptop{
+    width: 300px;
+    text-align: center;
+    padding: 20px 5px;
+    transition: 0.5s;
+}
+.laptop > h2{
+    margin: 20px 0px;
+}
+.laptop > i{
+    font-size: 50px;  
+}
+.laptop:hover{
+    box-shadow: 4px 4px 5px gray;
+    background-color: #f3f0eb;
+    border-radius: 10px;
+}
+
+
+/* second section start here */
+#second-section{
+background-color: #f5f3f3;
+}
+
+.smartarea-title > h2{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.smartarea-title > h2::after {
+    content: '';
+    margin: 51px;
+    left: 686px;
+    width: 100px;
+    height: 5px;
+    background-color: #aa1010;
+    position: absolute;
+}
+
+.smart-area{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.smart-area-text{
+    width: 550px;
+}
+
+.smart-area-text > h4{
+    color: #aa1010;
+}
+
+.smart-area-text > h2{
+    margin: 30px 0px;
+}
+
+.smart-area-text > a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #aa1010;
+    padding: 10px 25px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.smart-area-text > a:hover{
+    background-color: #aa101054;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+/* third section start here */
+
+#primary-services{
+    background-color: #f5f1f1;
+}
+.primary-services-area{
+    width: 1050px;
+    margin: auto;
+}
+
+.primary-services-title{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.primary-services-title > h2{
+    font-size: 30px;
+}
+
+.services-cetagory{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 50px; 
+}
+
+.visual{
+    text-align: center;
+    background-color: #63b6ee5e;
+    padding: 10px 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.visual > h3{
+    margin: 15px 0px;
+    color: #aa1010;
+}
+.visual > i{
+    font-size: 40px;
+    color: #aa1010;
+    margin-top: 10px;
+}
+
+.visual:hover{
+    background-color: #236ea05e;
+    box-shadow: 4px 4px 5px gray;
+}
+
+/* Fourth section code hare */
+
+.pricing{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.pricing-title > h2{
+    font-size: 40px;
+    margin: 50px 0;
+}
+
+.pricing-area{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.pricing-item{
+    width: 220px;
+    box-shadow: 5px 5px 10px gray;
+    
+}
+
+.images > img{
+    width: 220px;
+    height: 150px;
+}
+
+.pricing-item > h3{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.per-month-span{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    margin: 15px 15px;
+    padding: 5px 0px;
+    
+}
+.per-month1{
+    font-size: 30px;
+}
+
+.per-month2{
+    color: gray;
+}
+
+.btn{
+    background-color: #aa1010;
+    padding: 10px 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #aa101054;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.pricing-item > a{
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: blue;
+    display: inline-block;
+    
+}
+
